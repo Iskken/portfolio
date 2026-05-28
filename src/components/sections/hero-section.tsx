@@ -8,7 +8,8 @@ import {
 
 import { Reveal } from "@/components/animations/reveal";
 import { Button } from "@/components/ui/button";
-import { profileStats, socialLinks } from "@/lib/data";
+import { socialLinks } from "@/lib/data";
+// import { profileStats } from "@/lib/data";
 
 export function HeroSection() {
   return (
@@ -25,12 +26,12 @@ export function HeroSection() {
               Computer science student · data scientist
             </div>
             <h1 className="mt-7 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Building practical data products with clean software foundations.
+              Building practical machine learning and data products.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-              I turn messy datasets into usable models, dashboards, and API-backed
-              prototypes. My current focus is machine learning, analytics
-              engineering, and Spring Boot services for real-world workflows.
+              I build machine learning workflows, analytics tools, 
+              and data-driven applications that focus on usability, 
+              experimentation, and measurable impact.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button asChild>
@@ -40,7 +41,7 @@ export function HeroSection() {
                 </a>
               </Button>
               <Button asChild variant="outline">
-                <a href={socialLinks.email}>
+                <a href="#contact">
                   <Mail className="size-4" aria-hidden="true" />
                   Contact me
                 </a>
@@ -77,9 +78,9 @@ export function HeroSection() {
               </p>
               <div className="mt-6 space-y-5">
                 {[
-                  "Machine learning pipelines that are explainable and measurable.",
-                  "SQL-backed analytics workflows for repeatable reporting.",
-                  "Spring Boot APIs that connect models to usable products.",
+                  "Applied machine learning and model evaluation.",
+                  "Building data tools beyond notebook prototypes.",
+                  "Reproducible analytics workflows and experimentation.",
                 ].map((item) => (
                   <div key={item} className="flex gap-3">
                     <span className="mt-2 size-2 rounded-full bg-emerald-300" />
@@ -88,7 +89,7 @@ export function HeroSection() {
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-3">
+            {/* <div className="grid grid-cols-3 gap-3">
               {profileStats.map((stat) => (
                 <div
                   key={stat.label}
@@ -100,7 +101,7 @@ export function HeroSection() {
                   </p>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </Reveal>
       </div>

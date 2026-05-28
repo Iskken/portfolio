@@ -20,16 +20,16 @@ export const navigationItems = [
 ];
 
 export const socialLinks = {
-  github: "https://github.com/username",
-  linkedin: "https://www.linkedin.com/in/username",
-  email: "mailto:student@example.com",
+  github: "https://github.com/Iskken",
+  linkedin: "https://www.linkedin.com/in/iskender-imanaliev/",
+  email: "iimanaliev312@gmail.com",
 };
 
-export const profileStats = [
-  { value: "12+", label: "Projects shipped" },
-  { value: "3", label: "Applied ML domains" },
-  { value: "2 yrs", label: "CS coursework" },
-];
+// export const profileStats = [
+//   { value: "12+", label: "Projects shipped" },
+//   { value: "3", label: "Applied ML domains" },
+//   { value: "2 yrs", label: "CS coursework" },
+// ];
 
 export const skills = [
   {
