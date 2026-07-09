@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio.example.com"),
+  metadataBase: new URL("https://iskender-imanaliev.vercel.app"),
   title: {
     default: "Iskender Imanaliev | Data Scientist Portfolio",
     template: "%s | Iskender Imanaliev",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     title: "Iskender Imanaliev | Data Scientist Portfolio",
     description:
       "Projects, skills, and experience for internship and junior data/software roles.",
-    url: "https://portfolio.example.com",
+    url: "https://iskender-imanaliev.vercel.app",
     siteName: "Iskender Imanaliev Portfolio",
     locale: "en_US",
     type: "website",
@@ -50,6 +51,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-zinc-950 font-sans text-zinc-100 antialiased">
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
