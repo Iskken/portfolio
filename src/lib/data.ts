@@ -1,9 +1,10 @@
 import {
+  Award,
   BrainCircuit,
   ChartNoAxesCombined,
   Cloud,
   Code2,
-  Container,
+  Cpu,
   Database,
   GraduationCap,
   LineChart,
@@ -45,92 +46,113 @@ export const skills = [
     items: ["SQL", "ETL", "PostgreSQL", "Data cleaning", "Visualization"],
   },
   {
-    title: "Backend Foundations",
+    title: "Software Engineering",
     description: "Service-oriented APIs with practical Spring Boot exposure.",
     icon: Server,
     items: ["Spring Boot", "REST APIs", "Java", "Testing", "API design"],
   },
   {
     title: "Cloud & Delivery",
-    description: "Containerized workflows and deployable project environments.",
+    description:
+      "CI/CD pipelines and container orchestration for deployable project environments.",
     icon: Cloud,
-    items: ["Docker", "AWS", "GitHub Actions", "Linux", "CI basics"],
+    items: ["Docker", "Kubernetes", "Jenkins", "AWS", "GitHub Actions", "Linux"],
   },
 ];
 
 export const projects = [
   {
-    title: "Internship Match Predictor",
+    title: "Echoes of Longevity: Healthy Ageing Narratives in Science, News, and Social Media",
     description:
-      "A supervised learning workflow that scores internship postings against resume features and highlights the strongest match factors.",
-    impact: "Improved shortlist precision by 28% on a held-out sample dataset.",
-    tags: ["Python", "scikit-learn", "NLP", "Pandas"],
-    href: "https://github.com/username/internship-match-predictor",
+      "Large-scale NLP research analyzing how healthy ageing is discussed across PubMed, news media, Reddit, and YouTube. Applied transformer-based sentiment and emotion classification, interrupted time series modeling to detect lasting shifts in discourse around the COVID-19 pandemic, and Granger causality analysis to test lead-lag dynamics between platforms.",
+    impact:
+      "1st Place & Special Recognition Award — TDK Scientific Conference (2025); 2nd Place — EELISA Student Scientific Conference (2026).",
+    tags: ["Python", "NLP", "Transformers", "Time Series Analysis", "spaCy", "statsmodels"],
+    href: "https://github.com/Iskken/Echoes-of-Longevity-Research",
+    icon: Award,
+  },
+  {
+    title: "Resource-Efficient Neural Networks: Quantization Sensitivity",
+    description:
+      "Ongoing BME Project Laboratory research into how fixed-point quantization affects neural network training and robustness. Investigates post-training and quantization-aware training, gradient deadlock, gradient scaling, error accumulation, zero-order optimization, and a custom differentiable stair non-linearity for hardware-aware training, progressing from linear models to a quantized two-layer MLP.",
+    impact:
+      "Supervised BME Project Laboratory course — formal report with 7 controlled experiments; research in progress.",
+    tags: ["Python", "PyTorch", "NumPy", "scikit-learn", "Quantization", "Numerical Optimization"],
+    href: "https://github.com/Iskken/fixed-point-quantization-nn",
+    icon: Cpu,
+  },
+  {
+    title: "GlassBoxML",
+    description:
+      "Classic ML algorithms (linear regression, logistic regression, decision tree) hand-implemented from scratch and exposed through an interactive FastAPI web demo with a Chart.js frontend.",
+    impact:
+      "Containerized with Docker, CI/CD via GitHub Actions and Jenkins, deployed to a local Kubernetes cluster (minikube).",
+    tags: ["Python", "FastAPI", "Docker", "Kubernetes", "Jenkins", "GitHub Actions"],
+    href: "https://github.com/Iskken/GlassBoxML",
     icon: ChartNoAxesCombined,
   },
   {
-    title: "Campus Energy Forecast",
+    title: "Credit Risk Prediction Pipeline",
     description:
-      "Time-series forecasting notebook and dashboard for predicting short-term building energy demand from weather and usage signals.",
-    impact: "Compared baseline, random forest, and gradient boosting approaches.",
-    tags: ["Python", "SQL", "Plotly", "Forecasting"],
-    href: "https://github.com/username/campus-energy-forecast",
+      "End-to-end ML prototype for credit risk prediction, covering preprocessing, feature engineering, model training, and evaluation.",
+    impact: "REST API endpoints for model inference, containerized with Docker.",
+    tags: ["Python", "scikit-learn", "pandas", "FastAPI", "Docker"],
+    href: null,
     icon: LineChart,
-  },
-  {
-    title: "Research Paper Explorer",
-    description:
-      "Searchable full-stack prototype for clustering paper abstracts and surfacing related topics for student research groups.",
-    impact: "Built a Spring Boot API with reproducible Docker development setup.",
-    tags: ["Spring Boot", "PostgreSQL", "Docker", "Embeddings"],
-    href: "https://github.com/username/research-paper-explorer",
-    icon: Code2,
   },
 ];
 
 export const timeline = [
   {
-    date: "2026",
-    title: "Computer Science Student",
-    organization: "University Program",
+    date: "Internship",
+    title: "Data Science Research Intern",
+    organization: "HSDS-Lab",
     description:
-      "Focused on algorithms, databases, machine learning, and software engineering fundamentals.",
+      "Designed and automated scalable Python ETL pipelines processing ~100k documents, and integrated LLM APIs for structured output generation and prompt engineering experiments.",
+    icon: Database,
+  },
+  {
+    date: "Internship",
+    title: "Finance Data Science Intern",
+    organization: "FinKell",
+    description:
+      "Built a Python backend with REST APIs for an end-to-end credit risk prediction pipeline, containerized and deployed with Docker on AWS.",
+    icon: Cloud,
+  },
+  {
+    date: "Internship",
+    title: "Java Software Developer Intern",
+    organization: "FinanceSoft",
+    description:
+      "Developed and maintained Java Spring Boot microservices in a production financial system, strengthening test coverage with JUnit and Mockito in an Agile/Scrum team.",
+    icon: Server,
+  },
+  {
+    date: "Sep 2023 – June 2027",
+    title: "Computer Science Engineering BSc",
+    organization: "BME",
+    description:
+      "Coursework in algorithms, databases, machine learning, and software engineering fundamentals; top 10% of programme by GPA.",
     icon: GraduationCap,
-  },
-  {
-    date: "2025",
-    title: "Data Science Project Lead",
-    organization: "Student Analytics Lab",
-    description:
-      "Coordinated small project teams, cleaned real-world datasets, and presented model results to non-technical audiences.",
-    icon: BrainCircuit,
-  },
-  {
-    date: "2024",
-    title: "Backend & DevOps Practice",
-    organization: "Independent Projects",
-    description:
-      "Built REST API prototypes with Spring Boot, containerized services with Docker, and explored AWS deployment basics.",
-    icon: Container,
   },
 ];
 
 export const contactMethods = [
   {
     label: "Email",
-    value: "student@example.com",
-    href: socialLinks.email,
+    value: socialLinks.email,
+    href: `mailto:${socialLinks.email}`,
     icon: Mail,
   },
   {
     label: "GitHub",
-    value: "github.com/username",
+    value: "github.com/Iskken",
     href: socialLinks.github,
     icon: Code2,
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/username",
+    value: "linkedin.com/in/iskender-imanaliev",
     href: socialLinks.linkedin,
     icon: GraduationCap,
   },

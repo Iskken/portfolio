@@ -26,11 +26,11 @@ export function HeroSection() {
               Computer science student · data scientist
             </div>
             <h1 className="mt-7 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Building practical machine learning and data products.
+              Building practical software and machine learning systems.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-              I build machine learning workflows, analytics tools, 
-              and data-driven applications that focus on usability, 
+              I build machine learning workflows, backend services,
+              and data-driven applications that focus on usability,
               experimentation, and measurable impact.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">

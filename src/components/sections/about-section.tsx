@@ -9,25 +9,26 @@ export function AboutSection() {
           <SectionHeading
             eyebrow="About"
             title="Curious, analytical, and happiest close to the problem."
-            description="I like work that blends statistical thinking with dependable software. The goal is not just a notebook that works once, but a workflow someone else can understand, run, and trust."
+            description="I like work that blends statistical thinking and mathematical intuition with dependable software. 
+            The goal is not just a notebook that works once, but a workflow someone else can understand, run, and trust."
           />
         </Reveal>
 
         <Reveal delay={0.1}>
           <div className="grid gap-5 text-base leading-8 text-zinc-300">
             <p>
-              I am a computer science student building toward data science and
-              junior software roles. My strongest work sits at the intersection
-              of Python, machine learning, SQL, and product-minded communication.
+              I am a Computer Science student with a strong foundation in data science
+              and practical software roles. My strongest work sits at the intersection
+              of Python, machine learning, backend services (Java/Spring Boot), data manipulation, SQL,
+              and product-minded communication.
             </p>
             <p>
-              Recently, I have been expanding my backend foundations with Java
-              and Spring Boot so data projects can move beyond analysis into
-              usable services. I care about clean code, reproducible
-              experiments, clear documentation, and accessible user experiences.
+               I have developed end-to-end workflows ranging from automated credit scoring prototypes to extensive
+               NLP research. Across all my projects, I focus heavily on the mechanics of the algorithms I use,
+               ensuring the final predictive models are clear, deliberate, and trustworthy.
             </p>
             <div className="grid gap-4 pt-2 sm:grid-cols-3">
-              {["Model evaluation", "Data storytelling", "API prototyping"].map(
+              {["Predictive Modeling", "Applied NLP", "Explainable ML", "Software Engineering"].map(
                 (item) => (
                   <div
                     key={item}

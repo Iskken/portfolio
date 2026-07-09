@@ -17,7 +17,7 @@ export function ContactSection() {
               description="The best fit is a team that values curiosity, careful analysis, and clean implementation."
             />
             <Button asChild className="mt-8">
-              <a href={socialLinks.email}>
+              <a href={`mailto:${socialLinks.email}`}>
                 Send an email
                 <ArrowRight className="size-4" aria-hidden="true" />
               </a>

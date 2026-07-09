@@ -21,7 +21,7 @@ export function Navbar() {
           className="text-sm font-semibold tracking-wide text-white"
           onClick={() => setIsOpen(false)}
         >
-          Data Portfolio
+          Iskender Imanaliev
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -38,7 +38,7 @@ export function Navbar() {
 
         <div className="hidden md:block">
           <Button asChild size="sm" variant="outline">
-            <a href={socialLinks.email}>Let&apos;s talk</a>
+            <a href={`mailto:${socialLinks.email}`}>Let&apos;s talk</a>
           </Button>
         </div>
 

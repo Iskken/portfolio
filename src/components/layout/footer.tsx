@@ -5,14 +5,14 @@ import { socialLinks } from "@/lib/data";
 const links = [
   { label: "GitHub", href: socialLinks.github, icon: Code2 },
   { label: "LinkedIn", href: socialLinks.linkedin, icon: Network },
-  { label: "Email", href: socialLinks.email, icon: Mail },
+  { label: "Email", href: `mailto:${socialLinks.email}`, icon: Mail },
 ];
 
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-zinc-950">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-5 py-8 text-sm text-zinc-400 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-        <p>© 2026 Student Name. Built with Next.js and Tailwind CSS.</p>
+        <p>© 2026 Iskender Imanaliev. Built with Next.js and Tailwind CSS.</p>
         <div className="flex items-center gap-2">
           {links.map((link) => {
             const Icon = link.icon;

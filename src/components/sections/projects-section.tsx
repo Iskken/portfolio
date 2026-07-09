@@ -18,7 +18,7 @@ export function ProjectsSection() {
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
           {projects.map((project, index) => {
             const Icon = project.icon;
 
@@ -30,17 +30,19 @@ export function ProjectsSection() {
                       <div className="rounded-lg bg-sky-300/10 p-3 text-sky-200">
                         <Icon className="size-5" aria-hidden="true" />
                       </div>
-                      <a
-                        href={project.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-lg p-2 text-zinc-400 transition-colors hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
-                      >
-                        <span className="sr-only">
-                          Open {project.title} repository
-                        </span>
-                        <ArrowUpRight className="size-5" aria-hidden="true" />
-                      </a>
+                      {project.href ? (
+                        <a
+                          href={project.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rounded-lg p-2 text-zinc-400 transition-colors hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
+                        >
+                          <span className="sr-only">
+                            Open {project.title} repository
+                          </span>
+                          <ArrowUpRight className="size-5" aria-hidden="true" />
+                        </a>
+                      ) : null}
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-white">

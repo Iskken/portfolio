@@ -7,8 +7,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio.example.com"),
   title: {
-    default: "Student Name | Data Scientist Portfolio",
-    template: "%s | Student Name",
+    default: "Iskender Imanaliev | Data Scientist Portfolio",
+    template: "%s | Iskender Imanaliev",
   },
   description:
     "Portfolio for a computer science student and aspiring data scientist focused on Python, machine learning, SQL, Spring Boot, Docker, and AWS.",
@@ -22,19 +22,19 @@ export const metadata: Metadata = {
     "Docker",
     "AWS",
   ],
-  authors: [{ name: "Student Name" }],
+  authors: [{ name: "Iskender Imanaliev" }],
   openGraph: {
-    title: "Student Name | Data Scientist Portfolio",
+    title: "Iskender Imanaliev | Data Scientist Portfolio",
     description:
       "Projects, skills, and experience for internship and junior data/software roles.",
     url: "https://portfolio.example.com",
-    siteName: "Student Name Portfolio",
+    siteName: "Iskender Imanaliev Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Name | Data Scientist Portfolio",
+    title: "Iskender Imanaliev | Data Scientist Portfolio",
     description:
       "Computer science student building practical data science and backend projects.",
   },
