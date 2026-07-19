@@ -5,6 +5,7 @@ import {
   Network,
   Sparkles,
 } from "lucide-react";
+import Image from "next/image";
 
 import { Reveal } from "@/components/animations/reveal";
 import { Button } from "@/components/ui/button";
@@ -72,6 +73,20 @@ export function HeroSection() {
 
         <Reveal delay={0.12}>
           <div className="grid gap-4">
+            <div className="relative aspect-square overflow-hidden rounded-lg border border-white/10 bg-white/[0.04]">
+              <Image
+                src="/profile.jpg"
+                alt="Portrait of Iskender Imanaliev"
+                fill
+                priority
+                sizes="(min-width: 1024px) 320px, 100vw"
+                className="object-cover"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950/50 via-transparent to-transparent" />
+            </div>
+            <p className="text-center text-sm text-zinc-400">
+              Presenting Echoes of Longevity
+            </p>
             <div className="rounded-lg border border-white/10 bg-white/[0.04] p-6">
               <p className="text-sm font-medium uppercase tracking-[0.16em] text-amber-200">
                 Current focus
@@ -79,7 +94,7 @@ export function HeroSection() {
               <div className="mt-6 space-y-5">
                 {[
                   "Applied machine learning and model evaluation.",
-                  "Building data tools beyond notebook prototypes.",
+                  "Building GlassBoxML, a hand-implemented ML library with a full DevOps pipeline (Docker, CI/CD, Kubernetes).",
                   "Reproducible analytics workflows and experimentation.",
                 ].map((item) => (
                   <div key={item} className="flex gap-3">
