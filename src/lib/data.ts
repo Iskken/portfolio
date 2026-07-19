@@ -102,6 +102,21 @@ export const projects = [
   },
 ];
 
+export const recognitionAwards = [
+  {
+    title: "1st Place & Special Recognition Award",
+    caption:
+      "1st Place & Special Recognition — TDK BME Scientific Conference, 2025, for the Echoes of Longevity research.",
+    image: "/recognition-tdk.jpg",
+  },
+  {
+    title: "2nd Place",
+    caption:
+      "2nd Place — EELISA Student Scientific Conference, 2026, for the Echoes of Longevity research.",
+    image: "/recognition-eelisa.jpg",
+  },
+];
+
 export const timeline = [
   {
     date: "Internship",

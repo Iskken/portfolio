@@ -48,7 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen bg-zinc-950 font-sans text-zinc-100 antialiased">
+      <body
+        className="min-h-screen bg-zinc-950 font-sans text-zinc-100 antialiased"
+        suppressHydrationWarning
+      >
         <Navbar />
         {children}
         <Analytics />
